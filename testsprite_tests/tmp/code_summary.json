@@ -1,0 +1,119 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "React",
+    "Vite",
+    "TailwindCSS",
+    "Radix UI",
+    "Supabase",
+    "React Query"
+  ],
+  "features": [
+    {
+      "name": "Routing and Shell",
+      "description": "App entry, router, and shared layout/style setup.",
+      "files": [
+        "src/main.tsx",
+        "src/App.tsx",
+        "src/index.css",
+        "index.html",
+        "vite.config.ts"
+      ]
+    },
+    {
+      "name": "Navigation and Footer",
+      "description": "Navbar and Footer components used across pages.",
+      "files": [
+        "src/components/Navbar.tsx",
+        "src/components/Footer.tsx"
+      ]
+    },
+    {
+      "name": "Dashboard and Analytics",
+      "description": "Dashboard page and analytics widgets.",
+      "files": [
+        "src/pages/Dashboard.tsx",
+        "src/components/StatsCard.tsx",
+        "src/components/analytics"
+      ]
+    },
+    {
+      "name": "Authentication",
+      "description": "Auth page, auth hook, and Supabase integration.",
+      "files": [
+        "src/pages/Auth.tsx",
+        "src/hooks/useAuth.tsx",
+        "src/integrations/supabase",
+        "src/lib/utils.ts"
+      ]
+    },
+    {
+      "name": "Chat",
+      "description": "Chat page and styles.",
+      "files": [
+        "src/pages/Chat.tsx",
+        "src/pages/Chat.css",
+        "src/pages/Conversations.tsx"
+      ]
+    },
+    {
+      "name": "POS and Sales",
+      "description": "POS pages and sales order flow.",
+      "files": [
+        "src/pages/pos",
+        "src/pages/SalesOrder.tsx",
+        "src/pages/Receipts.tsx"
+      ]
+    },
+    {
+      "name": "Catalog and Products",
+      "description": "Product listing, details, and form pages.",
+      "files": [
+        "src/pages/InventoryPage.tsx",
+        "src/pages/ProductDetail.tsx",
+        "src/pages/ProductForm.tsx",
+        "src/pages/Category.tsx",
+        "src/data/mockData.ts",
+        "src/types/pos.ts"
+      ]
+    },
+    {
+      "name": "Settings and Profile",
+      "description": "User settings and profile management.",
+      "files": [
+        "src/pages/Settings.tsx",
+        "src/pages/Profile.tsx"
+      ]
+    },
+    {
+      "name": "Utilities and Libs",
+      "description": "Common utilities, printing, offline sync, and monitoring.",
+      "files": [
+        "src/lib/utils.ts",
+        "src/lib/print.ts",
+        "src/lib/offlineSync.ts",
+        "src/lib/monitoring.ts"
+      ]
+    },
+    {
+      "name": "Hooks",
+      "description": "Reusable hooks for mobile, toast, debouncing, and auth.",
+      "files": [
+        "src/hooks/use-mobile.tsx",
+        "src/hooks/use-toast.ts",
+        "src/hooks/useDebounce.tsx",
+        "src/hooks/useAuth.tsx"
+      ]
+    },
+    {
+      "name": "Pages and Routing",
+      "description": "Top-level pages and index routes.",
+      "files": [
+        "src/pages/Index.tsx",
+        "src/pages/NotFound.tsx",
+        "src/pages/OrderDetails.tsx",
+        "src/pages/BusinessType.tsx"
+      ]
+    }
+  ]
+}

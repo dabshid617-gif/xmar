@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8082",
+  "executionArgs": {
+    "projectName": "profile",
+    "projectPath": "c:\\Users\\ruwey\\Desktop\\comp\\profile",
+    "testIds": [],
+    "additionalInstruction": "Run frontend tests against http://localhost:8082. Use tunnel if required. Save raw report to testsprite_tests/tmp/raw_report.md and consolidate to testsprite_tests/testsprite-mcp-test-report.md.",
+    "envs": {
+      "API_KEY": "sk-user-h3tcdVZh-hLs48aZo37Lx15fB2hrw9v85gZa5J9lzt_YmkEy5vf-F3UiWAcNf-SARA3Mp-yImbp_mTva8lSaTzDzrrobPgYCZ8ZQG84ALCt6T9OlfXXyMwb4Lu4zXtRWY94"
+    }
+  },
+  "proxy": "http://7cf8192d-d01d-4da1-afaf-ff30c8e69950:XJjoMwydEX7ynVhGxv4IvV6Z6VImPSps@tun.testsprite.com:8080"
+}

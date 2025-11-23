@@ -1,0 +1,4 @@
+ALTER TABLE public.products
+ADD COLUMN stock INTEGER,
+ADD COLUMN sku TEXT,
+ADD COLUMN barcode TEXT;

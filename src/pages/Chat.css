@@ -1,0 +1,31 @@
+/* src/pages/Chat.css */
+
+.whatsapp-green {
+  background-color: #075E54;
+}
+
+.whatsapp-light-green {
+  background-color: #128C7E;
+}
+
+.chat-background {
+  background-color: #ECE5DD;
+  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+}
+
+.message-bubble {
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.message-outgoing {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.message-incoming {
+  background-color: #FFFFFF;
+  align-self: flex-start;
+}

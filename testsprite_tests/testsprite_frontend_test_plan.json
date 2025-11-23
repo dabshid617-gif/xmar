@@ -1,0 +1,611 @@
+[
+  {
+    "id": "TC001",
+    "title": "User Sign-Up with Valid Credentials",
+    "description": "Verify that a user can successfully sign up using valid email, username, and password.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-up page."
+      },
+      {
+        "type": "action",
+        "description": "Fill in valid email, username, and password fields."
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-up form."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that sign-up completes successfully and user is redirected to home or dashboard."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "User Sign-Up with Invalid Email",
+    "description": "Ensure that the sign-up form shows appropriate error when an invalid email format is entered.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-up page."
+      },
+      {
+        "type": "action",
+        "description": "Enter invalid email format, valid username, and password."
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-up form."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that an email format validation error is displayed and sign-up is blocked."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "User Sign-In with Correct Credentials",
+    "description": "Confirm that users can log in successfully using valid registered credentials and session persists.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-in page."
+      },
+      {
+        "type": "action",
+        "description": "Enter valid email and password."
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify login succeeds and user lands on home or seller dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that session persists on page reload."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "User Sign-In with Incorrect Password",
+    "description": "Verify proper error message appears when a user attempts login with an incorrect password.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-in page."
+      },
+      {
+        "type": "action",
+        "description": "Enter valid email and incorrect password."
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm an invalid credentials error message is shown and login is blocked."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Password Reset Flow",
+    "description": "Ensure that users can request a password reset and successfully reset password via email link.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the password reset page."
+      },
+      {
+        "type": "action",
+        "description": "Enter registered email address."
+      },
+      {
+        "type": "action",
+        "description": "Submit the password reset request."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that a reset link email is sent."
+      },
+      {
+        "type": "action",
+        "description": "Use the reset link to set a new password."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user can log in with the new password."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Load Home Page Product Grid Performance",
+    "description": "Validate that the home page product grid loads and renders within 2 seconds on a broadband connection.",
+    "category": "performance",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the home page."
+      },
+      {
+        "type": "assertion",
+        "description": "Measure page product grid load time and verify it is under 2 seconds."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm UI components including search, categories, and CTAs are rendered correctly."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Category Page Filtering and Pagination",
+    "description": "Verify that category pages correctly display products with filters applied and support pagination.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a category page."
+      },
+      {
+        "type": "action",
+        "description": "Apply multiple filters such as price range, subcategories, and ratings."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm product list updates accordingly with applied filters."
+      },
+      {
+        "type": "action",
+        "description": "Navigate through pagination controls."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify correct products load on each page."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Detailed Product Page Elements and Chat Initiation",
+    "description": "Confirm that product detail pages show image galleries, ratings, seller info, variant options, and enable chat initiation.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a detailed product page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify image gallery is functional and images can be viewed in detail."
+      },
+      {
+        "type": "assertion",
+        "description": "Check product ratings and reviews are correctly displayed."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm seller information and product variants/options are visible."
+      },
+      {
+        "type": "action",
+        "description": "Click chat initiation button."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify real-time chat conversation is created and displayed."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Product Creation with AI-Assisted Description Suggestions",
+    "description": "Validate that sellers can create new products using AI suggestions for description, category, and upload images with variant handling.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in as seller and navigate to the product creation form."
+      },
+      {
+        "type": "action",
+        "description": "Fill in basic product details and request AI-enabled description/category suggestions."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm suggested descriptions and categories are displayed for selection."
+      },
+      {
+        "type": "action",
+        "description": "Upload multiple product images."
+      },
+      {
+        "type": "action",
+        "description": "Add product variants with attributes."
+      },
+      {
+        "type": "action",
+        "description": "Submit the product creation form."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify product is successfully created and visible in the seller's inventory."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Product Editing and Validation",
+    "description": "Ensure product edit form validates all inputs, supports image changes and variant edits, and updates product successfully.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in as seller and open an existing product for editing."
+      },
+      {
+        "type": "action",
+        "description": "Modify fields including name, prices, and variants."
+      },
+      {
+        "type": "action",
+        "description": "Remove and upload new product images."
+      },
+      {
+        "type": "action",
+        "description": "Intentionally leave mandatory fields empty to test validation."
+      },
+      {
+        "type": "assertion",
+        "description": "Check validation errors appear for missing or invalid fields."
+      },
+      {
+        "type": "action",
+        "description": "Correct inputs and submit the form."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm product details update successfully and reflect in inventory."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Seller Profile Display and Statistics",
+    "description": "Verify that seller profile pages display correct personal info, business type, statistics, reviews, and product inventory.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a seller's profile page."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm personal information and business type are displayed accurately."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify seller statistics and business performance metrics are shown."
+      },
+      {
+        "type": "assertion",
+        "description": "Check recent reviews for the seller are listed."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that the seller’s product inventory is visible and correct."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Settings Panel Business Type and Receipt Customization",
+    "description": "Validate that sellers can configure business types, customize receipt templates, and update location preferences including geolocation.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in as seller and open the settings panel."
+      },
+      {
+        "type": "action",
+        "description": "Change business type and save."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm business type is updated and persists on reload."
+      },
+      {
+        "type": "action",
+        "description": "Modify receipt template fields and save."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that receipt preview updates to reflect changes."
+      },
+      {
+        "type": "action",
+        "description": "Update location preferences manually and via geolocation."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify location data is updated accordingly."
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "POS Module Basic Order and Cart Management",
+    "description": "Test that sellers can browse inventory, add multiple products to cart, adjust quantities and discounts via numpad, and clear cart.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open POS module as authenticated seller."
+      },
+      {
+        "type": "action",
+        "description": "Browse inventory and add multiple items to cart."
+      },
+      {
+        "type": "action",
+        "description": "Change item quantities and apply discounts via numpad interface."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm cart updates instantaneously and reflects changes."
+      },
+      {
+        "type": "action",
+        "description": "Clear cart and verify cart empties."
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "POS Multi-Order Tabs and Payment Splitting",
+    "description": "Validate that POS supports multiple open order tabs, payment splitting between orders, and correct totals calculation.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open multiple order tabs in POS and add products to each."
+      },
+      {
+        "type": "action",
+        "description": "Process payments splitting amounts between order tabs."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm payment amounts are correctly allocated and totals reflect accurately."
+      },
+      {
+        "type": "action",
+        "description": "Close order tabs and verify order creation and receipt printing."
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "POS Offline Mode Order Queue and Synchronization",
+    "description": "Ensure POS offline orders queue locally, can be processed without network, and sync correctly when reconnecting without data loss.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate offline mode in POS."
+      },
+      {
+        "type": "action",
+        "description": "Add products and complete checkout to create orders while offline."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify orders are queued locally and receipts generated."
+      },
+      {
+        "type": "action",
+        "description": "Restore network connection."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm offline orders synchronize with backend correctly and no duplicates or data loss occur."
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Row-Level Security Enforcement in Supabase",
+    "description": "Test that Supabase row-level security rules prevent unauthorized data access and modifications.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Attempt to access another seller’s product or order data using API or UI with a different authenticated account."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm access is denied and no sensitive data is exposed or modifiable."
+      },
+      {
+        "type": "action",
+        "description": "Try to update or delete data that belongs to another user."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify modification attempts are rejected by security policies."
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Real-Time Chat Creation and Messaging",
+    "description": "Verify chat conversations auto-create on product views and support sending/receiving messages in real-time.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "While authenticated as buyer, navigate to a product detail page."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that a new chat conversation with the seller is created automatically."
+      },
+      {
+        "type": "action",
+        "description": "Send a message to the seller from the chat interface."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm message is delivered and visible immediately."
+      },
+      {
+        "type": "action",
+        "description": "Receive a reply from the seller."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify reply is received and displayed in real-time."
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Product Form Submission Fallback Handling",
+    "description": "Check that product creation/editing form handles submission errors gracefully and supports fallback retries if Supabase is temporarily unavailable.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Fill product form and simulate backend failure during submission."
+      },
+      {
+        "type": "action",
+        "description": "Submit form."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify user is informed of the error with retry option."
+      },
+      {
+        "type": "action",
+        "description": "Retry submission after backend recovers."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that product is created successfully after retry."
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "Settings Persistence and Receipt Preview Accuracy",
+    "description": "Validate that settings changes are saved persistently and receipt preview updates reflect current receipt configuration.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Update various settings parameters including receipt template in settings panel."
+      },
+      {
+        "type": "action",
+        "description": "Save settings."
+      },
+      {
+        "type": "assertion",
+        "description": "Reload settings page and confirm changes persist."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that receipt preview matches saved settings accurately."
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "Analytics Dashboard Data Accuracy",
+    "description": "Confirm that analytics dashboard correctly displays sales, orders, receipts, and daily metrics aggregated from backend rollups for the logged-in seller.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in as seller and navigate to analytics dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify displayed sales counts and order totals align with backend data."
+      },
+      {
+        "type": "assertion",
+        "description": "Check that receipt overviews and daily metrics are correctly calculated and displayed."
+      },
+      {
+        "type": "action",
+        "description": "Generate new sales/orders and reload dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm dashboard updates to reflect new data accurately."
+      }
+    ]
+  },
+  {
+    "id": "TC021",
+    "title": "Responsive UI across Desktop and Mobile Browsers",
+    "description": "Verify that all major UI components including product grids, forms, chat, POS, and dashboards render correctly and are usable on modern desktop and mobile browsers.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access key application pages on desktop browsers (Chrome, Firefox, Safari)."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm layout, interactions, and responsiveness are as expected."
+      },
+      {
+        "type": "action",
+        "description": "Access the same pages on mobile browsers (Chrome, Safari iOS, Firefox Android)."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify UI elements scale, menus and navigation work, and touch interactions function properly."
+      }
+    ]
+  }
+]

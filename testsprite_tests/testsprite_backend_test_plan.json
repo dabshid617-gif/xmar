@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TC001",
+    "title": "user authentication flows",
+    "description": "Test the sign-up, sign-in, and password reset flows to ensure proper session persistence and error handling."
+  },
+  {
+    "id": "TC002",
+    "title": "product browsing and searching",
+    "description": "Verify that product grids on home and category pages load within 2 seconds and support search, filtering, and pagination."
+  },
+  {
+    "id": "TC003",
+    "title": "seller profile management",
+    "description": "Test creation and editing of seller profiles, including business type selection and product listing management with AI-assisted suggestions."
+  },
+  {
+    "id": "TC004",
+    "title": "pos multiorder checkout and offline sync",
+    "description": "Validate POS module functionality including multi-order cart management, quantity and discount editing, payment processing with splitting, and offline order queue synchronization."
+  },
+  {
+    "id": "TC005",
+    "title": "real time chat functionality",
+    "description": "Ensure real-time chat between buyers and sellers works correctly, including automatic conversation creation on product views and message sending/receiving."
+  },
+  {
+    "id": "TC006",
+    "title": "data security and row level security enforcement",
+    "description": "Verify that Supabase Row-Level Security strictly enforces user data access permissions, preventing unauthorized data retrieval or modification."
+  },
+  {
+    "id": "TC007",
+    "title": "settings panel updates and persistence",
+    "description": "Test updating business type configuration, receipt customization, and location management settings, ensuring changes persist and receipt previews update accordingly."
+  },
+  {
+    "id": "TC008",
+    "title": "analytics dashboard accuracy",
+    "description": "Validate that analytics dashboards display accurate sales, orders, receipt overviews, and daily metrics aggregated from backend rollups."
+  },
+  {
+    "id": "TC009",
+    "title": "product creation and editing validation",
+    "description": "Test product creation and editing forms for input validation, AI-assisted description and category suggestions, image uploads, and successful data submission with fallback support."
+  },
+  {
+    "id": "TC010",
+    "title": "ui responsiveness and cross browser compatibility",
+    "description": "Verify that major UI components are responsive and compatible across modern desktop and mobile browsers as specified."
+  }
+]
